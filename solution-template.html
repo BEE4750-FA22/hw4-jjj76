@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<HTML lang = "en">
+<HEAD>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>BEE 4750&#x2F;5750 Homework 4</title>
+  
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+  </script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Menlo&family=Hind&family=Raleway&family=Yantramanav&display=swap');
+</style>
+
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+  
+<style>
+pre.hljl {
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+    overflow-x: auto;
+    color: rgb(68,68,68); background-color: rgb(251,251,251); }
+pre.hljl > span.hljl-t { }
+pre.hljl > span.hljl-w { }
+pre.hljl > span.hljl-e { }
+pre.hljl > span.hljl-eB { }
+pre.hljl > span.hljl-o { }
+pre.hljl > span.hljl-k { color: rgb(148,91,176); font-weight: bold; }
+pre.hljl > span.hljl-kc { color: rgb(59,151,46); font-style: italic; }
+pre.hljl > span.hljl-kd { color: rgb(214,102,97); font-style: italic; }
+pre.hljl > span.hljl-kn { color: rgb(148,91,176); font-weight: bold; }
+pre.hljl > span.hljl-kp { color: rgb(148,91,176); font-weight: bold; }
+pre.hljl > span.hljl-kr { color: rgb(148,91,176); font-weight: bold; }
+pre.hljl > span.hljl-kt { color: rgb(148,91,176); font-weight: bold; }
+pre.hljl > span.hljl-n { }
+pre.hljl > span.hljl-na { }
+pre.hljl > span.hljl-nb { }
+pre.hljl > span.hljl-nbp { }
+pre.hljl > span.hljl-nc { }
+pre.hljl > span.hljl-ncB { }
+pre.hljl > span.hljl-nd { color: rgb(214,102,97); }
+pre.hljl > span.hljl-ne { }
+pre.hljl > span.hljl-neB { }
+pre.hljl > span.hljl-nf { color: rgb(66,102,213); }
+pre.hljl > span.hljl-nfm { color: rgb(66,102,213); }
+pre.hljl > span.hljl-np { }
+pre.hljl > span.hljl-nl { }
+pre.hljl > span.hljl-nn { }
+pre.hljl > span.hljl-no { }
+pre.hljl > span.hljl-nt { }
+pre.hljl > span.hljl-nv { }
+pre.hljl > span.hljl-nvc { }
+pre.hljl > span.hljl-nvg { }
+pre.hljl > span.hljl-nvi { }
+pre.hljl > span.hljl-nvm { }
+pre.hljl > span.hljl-l { }
+pre.hljl > span.hljl-ld { color: rgb(148,91,176); font-style: italic; }
+pre.hljl > span.hljl-s { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sa { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sb { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sc { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sd { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sdB { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sdC { color: rgb(201,61,57); }
+pre.hljl > span.hljl-se { color: rgb(59,151,46); }
+pre.hljl > span.hljl-sh { color: rgb(201,61,57); }
+pre.hljl > span.hljl-si { }
+pre.hljl > span.hljl-so { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sr { color: rgb(201,61,57); }
+pre.hljl > span.hljl-ss { color: rgb(201,61,57); }
+pre.hljl > span.hljl-ssB { color: rgb(201,61,57); }
+pre.hljl > span.hljl-nB { color: rgb(59,151,46); }
+pre.hljl > span.hljl-nbB { color: rgb(59,151,46); }
+pre.hljl > span.hljl-nfB { color: rgb(59,151,46); }
+pre.hljl > span.hljl-nh { color: rgb(59,151,46); }
+pre.hljl > span.hljl-ni { color: rgb(59,151,46); }
+pre.hljl > span.hljl-nil { color: rgb(59,151,46); }
+pre.hljl > span.hljl-noB { color: rgb(59,151,46); }
+pre.hljl > span.hljl-oB { color: rgb(102,102,102); font-weight: bold; }
+pre.hljl > span.hljl-ow { color: rgb(102,102,102); font-weight: bold; }
+pre.hljl > span.hljl-p { }
+pre.hljl > span.hljl-c { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-ch { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-cm { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-cp { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-cpB { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-cs { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-csB { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-g { }
+pre.hljl > span.hljl-gd { }
+pre.hljl > span.hljl-ge { }
+pre.hljl > span.hljl-geB { }
+pre.hljl > span.hljl-gh { }
+pre.hljl > span.hljl-gi { }
+pre.hljl > span.hljl-go { }
+pre.hljl > span.hljl-gp { }
+pre.hljl > span.hljl-gs { }
+pre.hljl > span.hljl-gsB { }
+pre.hljl > span.hljl-gt { }
+</style>
+
+
+
+  <link rel="stylesheet" href="bee4750.css">
+</HEAD>
+
+<BODY>
+  <div class ="container">
+    <div class = "row">
+      <div class = "col-md-12 twelve columns">
+        <div class="title">
+          <h1 class="title">BEE 4750&#x2F;5750 Homework 4</h1>
+          <h2 class="title">Jaden Jeswald (jjj76)</h2>
+          <h2 class="title">2022-11-11</h2>        
+
+        </div>
+    <hr class="title">
+
+
+        
+<!--  This setups the environment and installs packages, but doesn't appear in the generated document  -->
+
+
+<!--  You shouldn't need to modify this  -->
+
+
+
+<h1>Problem 1</h1>
+<h3>Two cities MSW disposal plan</h3>
+<h3>Three disposal alternatives: LF, MRF, WTE</h3>
+<h3>facility, capacity, fixed cost, tipping fee, recycling</h3>
+<h3>transportation 1.5 /MG-km</h3>
+<h2>Problem 1.1</h2>
+
+
+<pre class='hljl'>
+<span class='hljl-cs'>#Facilities</span><span class='hljl-t'>
+</span><span class='hljl-n'>capacities</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-ni'>150</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>350</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>200</span><span class='hljl-p'>];</span><span class='hljl-t'> 
+</span><span class='hljl-n'>fixed_costs</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-ni'>2500</span><span class='hljl-p'>;</span><span class='hljl-t'> </span><span class='hljl-ni'>1500</span><span class='hljl-p'>;</span><span class='hljl-t'> </span><span class='hljl-ni'>2000</span><span class='hljl-p'>];</span><span class='hljl-t'>
+</span><span class='hljl-n'>tipping_fees</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-ni'>60</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>7</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>50</span><span class='hljl-p'>];</span><span class='hljl-t'>
+
+</span><span class='hljl-cs'>#Relative Distances</span><span class='hljl-t'>
+</span><span class='hljl-n'>city1_dist</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-ni'>15</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>5</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>30</span><span class='hljl-p'>];</span><span class='hljl-t'>
+</span><span class='hljl-n'>city2_dist</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-ni'>10</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>15</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>25</span><span class='hljl-p'>];</span><span class='hljl-t'>
+
+</span><span class='hljl-cs'>#Other</span><span class='hljl-t'>
+</span><span class='hljl-n'>transport_cost</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nfB'>1.5</span><span class='hljl-p'>;</span><span class='hljl-t'>
+</span><span class='hljl-n'>solid_waste_production</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-ni'>100</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>170</span><span class='hljl-p'>];</span><span class='hljl-t'>
+
+</span><span class='hljl-n'>components</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-s'>&quot;Food&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;Paper&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;Plastic&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;Textile&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;Rubber&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;Wood&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;Yard&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;Glass&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;Fe&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;Al&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;Metal&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;Misc&quot;</span><span class='hljl-p'>]</span><span class='hljl-t'>
+</span><span class='hljl-n'>mass_percent</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-nfB'>0.15</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.40</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.05</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.03</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.02</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.05</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.18</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.04</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.02</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.02</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.01</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.03</span><span class='hljl-p'>]</span><span class='hljl-t'>
+</span><span class='hljl-n'>ash_percent</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-nfB'>0.08</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.07</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.05</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.10</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.15</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.02</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.02</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.70</span><span class='hljl-p'>]</span><span class='hljl-t'>
+</span><span class='hljl-n'>rec_percent</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-ni'>0</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.55</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.15</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.10</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.30</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.40</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.60</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.75</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.80</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.50</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>]</span><span class='hljl-t'>
+
+</span><span class='hljl-n'>fraction_rec</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>round</span><span class='hljl-p'>(</span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>mass_percent</span><span class='hljl-t'> </span><span class='hljl-oB'>.*</span><span class='hljl-t'> </span><span class='hljl-n'>rec_percent</span><span class='hljl-p'>),</span><span class='hljl-t'> </span><span class='hljl-n'>digits</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-ni'>4</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-n'>fraction_ash_dir</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>round</span><span class='hljl-p'>(</span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>mass_percent</span><span class='hljl-t'> </span><span class='hljl-oB'>.*</span><span class='hljl-t'> </span><span class='hljl-n'>ash_percent</span><span class='hljl-p'>),</span><span class='hljl-t'> </span><span class='hljl-n'>digits</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-ni'>4</span><span class='hljl-p'>)</span><span class='hljl-t'>
+
+</span><span class='hljl-cs'>#Results </span><span class='hljl-t'>
+</span><span class='hljl-nf'>println</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;overall recycling fraction is &quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>fraction_rec</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nf'>println</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;overall ash fraction is &quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>fraction_ash_dir</span><span class='hljl-p'>)</span>
+</pre>
+
+
+overall recycling fraction is 0.3775
+overall ash fraction is 0.1641
+
+
+<h2>Problem 1.2</h2>
+<p>Decision variables for optimization problem: <span class="math">$W_{i,j}$</span>, Waste transported from city i to disposal j&#40;Mg/day&#41; <span class="math">$R_{k,j}$</span>, Residual waste from disposal k to disposal j &#40;Mg/day&#41; <span class="math">$Y_{j}$</span>, Operational status disposal j &#40;true or false&#41;</p>
+<h2>Problem 1.3</h2>
+<p class="math">\[
+cost = \sum_i\sum_j a_{ij}1_{ij}W_{ij} + \sum_j [c_jY_j+\sum_ib_jW_{ij}]
+\]</p>
+
+
+<pre class='hljl'>
+<span class='hljl-k'>using</span><span class='hljl-t'> </span><span class='hljl-n'>JuMP</span><span class='hljl-t'>
+</span><span class='hljl-k'>using</span><span class='hljl-t'> </span><span class='hljl-n'>HiGHS</span><span class='hljl-t'>
+
+</span><span class='hljl-n'>waste</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>Model</span><span class='hljl-p'>(</span><span class='hljl-n'>HiGHS</span><span class='hljl-oB'>.</span><span class='hljl-n'>Optimizer</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-n'>cities</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-s'>&quot;A&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;B&quot;</span><span class='hljl-p'>]</span><span class='hljl-t'>
+</span><span class='hljl-n'>disposal_sites</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-s'>&quot;LF&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;MRF&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;WTE&quot;</span><span class='hljl-p'>]</span><span class='hljl-t'>
+</span><span class='hljl-n'>I</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-oB'>:</span><span class='hljl-nf'>length</span><span class='hljl-p'>(</span><span class='hljl-n'>cities</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-cs'>#cities </span><span class='hljl-t'>
+</span><span class='hljl-n'>J</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-oB'>:</span><span class='hljl-nf'>length</span><span class='hljl-p'>(</span><span class='hljl-n'>disposal_sites</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-cs'># disposal sites</span><span class='hljl-t'>
+
+</span><span class='hljl-n'>cost_waste_transport</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nfB'>1.5</span><span class='hljl-oB'>.*</span><span class='hljl-p'>[(</span><span class='hljl-ni'>15</span><span class='hljl-oB'>*</span><span class='hljl-ni'>60</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>5</span><span class='hljl-oB'>*</span><span class='hljl-ni'>7</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>30</span><span class='hljl-oB'>*</span><span class='hljl-ni'>50</span><span class='hljl-p'>);(</span><span class='hljl-ni'>10</span><span class='hljl-oB'>*</span><span class='hljl-ni'>60</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>15</span><span class='hljl-oB'>*</span><span class='hljl-ni'>7</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>25</span><span class='hljl-oB'>*</span><span class='hljl-ni'>50</span><span class='hljl-p'>)]</span><span class='hljl-t'>
+</span><span class='hljl-n'>cost_res</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nfB'>1.5</span><span class='hljl-t'> </span><span class='hljl-oB'>*</span><span class='hljl-p'>[</span><span class='hljl-ni'>0</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>18</span><span class='hljl-oB'>*</span><span class='hljl-ni'>45</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-ni'>15</span><span class='hljl-p'>;</span><span class='hljl-ni'>0</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>;</span><span class='hljl-ni'>0</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>18</span><span class='hljl-oB'>*</span><span class='hljl-ni'>45</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>]</span><span class='hljl-t'>
+
+
+</span><span class='hljl-nd'>@variable</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-n'>i</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>I</span><span class='hljl-p'>,</span><span class='hljl-n'>j</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>J</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>&gt;=</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@variable</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>R</span><span class='hljl-p'>[</span><span class='hljl-n'>k</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>J</span><span class='hljl-p'>,</span><span class='hljl-n'>j</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>J</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>&gt;=</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@variable</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>Y</span><span class='hljl-p'>[</span><span class='hljl-n'>j</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>J</span><span class='hljl-p'>],</span><span class='hljl-t'> </span><span class='hljl-n'>Bin</span><span class='hljl-p'>)</span><span class='hljl-t'>
+
+</span><span class='hljl-nd'>@objective</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>Min</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>cost_waste_transport</span><span class='hljl-t'> </span><span class='hljl-oB'>.*</span><span class='hljl-t'> </span><span class='hljl-n'>W</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>cost_res</span><span class='hljl-t'> </span><span class='hljl-oB'>.*</span><span class='hljl-t'> </span><span class='hljl-n'>R</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>fixed_costs</span><span class='hljl-t'> </span><span class='hljl-oB'>.*</span><span class='hljl-t'> </span><span class='hljl-n'>Y</span><span class='hljl-p'>))</span>
+</pre>
+
+
+1350 W[1,1] + 900 W[2,1] + 52.5 W[1,2] + 157.5 W[2,2] + 2250 W[1,3] + 1875 W[2,3] + 1215 R[1,2] + 1215 R[3,2] + 22.5 R[1,3] + 2500 Y[1] + 1500 Y[2] + 2000 Y[3]
+
+
+<p class="math">\[
+a_{ij}
+\]</p>
+<p>is cost transporting waste from i to j in <span class="math">$/Mg-Km $l_{ij}$</span> is the distance between sources i and disposal j &#40;km&#41;  <span class="math">$c_j$</span> is a fixed cost of operating disposal j in &#40;dollars/day&#41;  <span class="math">$b_j$</span> is a variable cost of disposing waste at disposal j in &#40;dollars/Mg&#41;</p>
+<p>So </p>
+<p>Waste-to-Energy: <span class="math">$2500Y_1 + 60(W_{11}+W_{21}+R_{21})$</span> Material Recovery: <span class="math">$1500Y_2 + 7(W_{21}+W_{22})+0.3775(45)(W_{12}+W_{22})$</span> Landfill: <span class="math">$2000Y_3 + 50(W_{13}+W_{23}+R_{13}+R_{23})$</span> Transportation: <span class="math">$1.5[15W_{11}+5W_{12}+30W_{13}+10W_{21}+15W_{22}+25W_{23}+18R_{13}+15R_{21}+32R_{23}]$</span></p>
+<h2>Problem 1.4</h2>
+<p>City Mass Balance: sum of waste  City 1: <span class="math">$W_{11}+W_{12}+W_{13}=100$</span> City 2: <span class="math">$W_{21}+W_{22}+W_{23}=170$</span></p>
+<p>Capacity Mass Balance: total weights WTE: <span class="math">$W_{11}+W_{21}+R_{21} \leq 150$</span> MRF: <span class="math">$W_{12}+W_{22} \leq 350$</span> LF: <span class="math">$W_{13}+W_{23}+R_{23}+R_{13} \leq 200$</span></p>
+<p>Recycling and Residual Ash: waste sent from WTE and sent from MRF Residual: <span class="math">$R_{13} = 0.1641(W_{11}+W_{21})+0.1386R_{21})$</span> Recycling: <span class="math">$R_{21}+R_{23}=(1-0.3775)(W_{12}+W_{22})$</span></p>
+<p>Commitment: binary variables and all waste is non negative If <span class="math">$W_{11}+W_{21}+R_{21}=0$</span>, <span class="math">$Y_1=0$</span>, else <span class="math">$Y_1=1$</span> If <span class="math">$W_{21}+W_{22}=0$</span>, <span class="math">$Y_1=0$</span>, else <span class="math">$Y_1=1$</span> The landfill must be on: <span class="math">$Y_3=1$</span> Nonnegativity: <span class="math">$W_{ij},R_{ij} \geq 0$</span></p>
+<h2>Problem 1.5</h2>
+
+
+<pre class='hljl'>
+<span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>city</span><span class='hljl-p'>[</span><span class='hljl-n'>i</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>I</span><span class='hljl-p'>],</span><span class='hljl-t'> </span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-n'>i</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-p'>])</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-n'>solid_waste_production</span><span class='hljl-p'>[</span><span class='hljl-n'>i</span><span class='hljl-p'>])</span><span class='hljl-t'>
+</span><span class='hljl-cs'>#WTE</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>WTE</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>R</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>&lt;=</span><span class='hljl-t'> </span><span class='hljl-n'>capacities</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>])</span><span class='hljl-t'>
+</span><span class='hljl-cs'>#MRF</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>MRF</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'>  </span><span class='hljl-oB'>&lt;=</span><span class='hljl-t'> </span><span class='hljl-n'>capacities</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>])</span><span class='hljl-t'>
+</span><span class='hljl-cs'>#LF</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>LF</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>R</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>R</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>&lt;=</span><span class='hljl-t'> </span><span class='hljl-n'>capacities</span><span class='hljl-p'>[</span><span class='hljl-ni'>3</span><span class='hljl-p'>])</span><span class='hljl-t'>
+
+</span><span class='hljl-cs'># residuals</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>residual_1</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>R</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-n'>fraction_ash_dir</span><span class='hljl-t'> </span><span class='hljl-oB'>.*</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>R</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]))</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>residual_2</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>R</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>R</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>1</span><span class='hljl-oB'>-</span><span class='hljl-n'>fraction_rec</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>.*</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]))</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>residual_3</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>R</span><span class='hljl-p'>[</span><span class='hljl-ni'>3</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-p'>])</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>noresidual_diag</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>R</span><span class='hljl-p'>[</span><span class='hljl-n'>i</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>i</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-k'>for</span><span class='hljl-t'> </span><span class='hljl-n'>i</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>I</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>noresidual</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>R</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+
+</span><span class='hljl-cs'># commitments </span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>commit_1</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>R</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-oB'>-</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>10000</span><span class='hljl-oB'>*</span><span class='hljl-n'>Y</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>])</span><span class='hljl-t'> </span><span class='hljl-oB'>&lt;=</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>commit_2</span><span class='hljl-p'>,</span><span class='hljl-t'>  </span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>10000</span><span class='hljl-oB'>*</span><span class='hljl-n'>Y</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>])</span><span class='hljl-t'> </span><span class='hljl-oB'>&lt;=</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>commit_3</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>Y</span><span class='hljl-p'>[</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-p'>)</span><span class='hljl-t'>
+
+</span><span class='hljl-nf'>optimize!</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>)</span>
+</pre>
+
+
+Running HiGHS 1.3.0 [date: 1970-01-01, git hash: e5004072b-dirty]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+8 rows, 11 cols, 28 nonzeros
+7 rows, 10 cols, 26 nonzeros
+
+Solving MIP model with:
+   7 rows
+   10 cols (2 binary, 0 integer, 0 implied int., 8 continuous)
+   26 nonzeros
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+     Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   2000            inf                  inf        0      0      0         0     0.0s
+ T       0       0         0   0.00%   2000            35525             94.37%        0      0      0         3     0.0s
+
+Solving report
+  Status            Optimal
+  Primal bound      35525
+  Dual bound        35525
+  Gap               0% (tolerance: 0.01%)
+  Solution status   feasible
+                    35525 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            0.00 (total)
+                    0.00 (presolve)
+                    0.00 (postsolve)
+  Nodes             1
+  LP iterations     3 (total)
+                    0 (strong br.)
+                    0 (separation)
+                    0 (heuristics)
+
+
+<h2>Problem 1.6</h2>
+<h3>Draw diagram showing flows of waste</h3>
+<h3>Report optimal objective value</h3>
+
+
+<pre class='hljl'>
+<span class='hljl-n'>cost_min</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>objective_value</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-n'>commitments</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>value</span><span class='hljl-oB'>.</span><span class='hljl-p'>(</span><span class='hljl-n'>Y</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-n'>waste_values</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>value</span><span class='hljl-oB'>.</span><span class='hljl-p'>(</span><span class='hljl-n'>W</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-n'>residual_values</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>value</span><span class='hljl-oB'>.</span><span class='hljl-p'>(</span><span class='hljl-n'>R</span><span class='hljl-p'>)</span><span class='hljl-t'>
+
+</span><span class='hljl-nf'>println</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;Objective Value &quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>objective_value</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nf'>println</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;Facility Not Used is the MRF&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+Objective Value objective_value
+Facility Not Used is the MRF
+
+
+<p><img src="waste_diagram.png" alt="Waste Diagram" /></p>
+<h1>Problem 2</h1>
+<h3>Carbon Tax</h3>
+<h3>WTE tipping fee increase</h3>
+<h3>Transportation costs increase</h3>
+<h3>discuss how this policy change will influence recommendation</h3>
+<h2>Problem 2.1</h2>
+<h3>What changes are needed to optimization</h3>
+<p>Need to change objective function  Waste-to-Energy: <span class="math">$2500Y_1 + 75(W_{11}+W_{21}+R_{21})$</span> Material Recovery: <span class="math">$1500Y_2 + 7(W_{21}+W_{22})+0.3775(45)(W_{12}+W_{22})$</span> Landfill: <span class="math">$2000Y_3 + 50(W_{13}+W_{23}+R_{13}+R_{23})$</span> Transportation: <span class="math">$2[15W_{11}+5W_{12}+30W_{13}+10W_{21}+15W_{22}+25W_{23}+18R_{13}+15R_{21}+32R_{23}]$</span></p>
+<h2>Problem 2.2</h2>
+<h3>Implement new optimization</h3>
+
+
+<pre class='hljl'>
+<span class='hljl-k'>using</span><span class='hljl-t'> </span><span class='hljl-n'>JuMP</span><span class='hljl-t'>
+</span><span class='hljl-k'>using</span><span class='hljl-t'> </span><span class='hljl-n'>HiGHS</span><span class='hljl-t'>
+
+</span><span class='hljl-n'>waste_new</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>Model</span><span class='hljl-p'>(</span><span class='hljl-n'>HiGHS</span><span class='hljl-oB'>.</span><span class='hljl-n'>Optimizer</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-n'>cities</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-s'>&quot;A&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;B&quot;</span><span class='hljl-p'>]</span><span class='hljl-t'>
+</span><span class='hljl-n'>disposal_sites</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-s'>&quot;LF&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;MRF&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;WTE&quot;</span><span class='hljl-p'>]</span><span class='hljl-t'>
+</span><span class='hljl-n'>I</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-oB'>:</span><span class='hljl-nf'>length</span><span class='hljl-p'>(</span><span class='hljl-n'>cities</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-cs'>#cities </span><span class='hljl-t'>
+</span><span class='hljl-n'>J</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-oB'>:</span><span class='hljl-nf'>length</span><span class='hljl-p'>(</span><span class='hljl-n'>disposal_sites</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-cs'># disposal sites</span><span class='hljl-t'>
+
+</span><span class='hljl-n'>cost_waste_transport</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nfB'>2.0</span><span class='hljl-oB'>.*</span><span class='hljl-p'>[(</span><span class='hljl-ni'>15</span><span class='hljl-oB'>*</span><span class='hljl-ni'>75</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>5</span><span class='hljl-oB'>*</span><span class='hljl-ni'>7</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>30</span><span class='hljl-oB'>*</span><span class='hljl-ni'>50</span><span class='hljl-p'>);(</span><span class='hljl-ni'>10</span><span class='hljl-oB'>*</span><span class='hljl-ni'>75</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>15</span><span class='hljl-oB'>*</span><span class='hljl-ni'>7</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>25</span><span class='hljl-oB'>*</span><span class='hljl-ni'>50</span><span class='hljl-p'>)]</span><span class='hljl-t'>
+</span><span class='hljl-n'>cost_res</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nfB'>2.0</span><span class='hljl-t'> </span><span class='hljl-oB'>*</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-ni'>0</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>18</span><span class='hljl-oB'>*</span><span class='hljl-ni'>45</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-ni'>15</span><span class='hljl-p'>;</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>;</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>18</span><span class='hljl-oB'>*</span><span class='hljl-ni'>45</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>]</span><span class='hljl-t'>
+
+
+</span><span class='hljl-nd'>@variable</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-n'>i</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>I</span><span class='hljl-p'>,</span><span class='hljl-n'>j</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>J</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>&gt;=</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@variable</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>R_new</span><span class='hljl-p'>[</span><span class='hljl-n'>k</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>J</span><span class='hljl-p'>,</span><span class='hljl-n'>j</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>J</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>&gt;=</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@variable</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>Y_new</span><span class='hljl-p'>[</span><span class='hljl-n'>j</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>J</span><span class='hljl-p'>],</span><span class='hljl-t'> </span><span class='hljl-n'>Bin</span><span class='hljl-p'>)</span><span class='hljl-t'>
+
+
+</span><span class='hljl-nd'>@objective</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>Min</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>cost_waste_transport</span><span class='hljl-t'> </span><span class='hljl-oB'>.*</span><span class='hljl-t'> </span><span class='hljl-n'>W_new</span><span class='hljl-p'>)</span><span class='hljl-oB'>+</span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>cost_res</span><span class='hljl-t'> </span><span class='hljl-oB'>.*</span><span class='hljl-t'> </span><span class='hljl-n'>R_new</span><span class='hljl-p'>)</span><span class='hljl-oB'>+</span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>fixed_costs</span><span class='hljl-t'> </span><span class='hljl-oB'>.*</span><span class='hljl-t'> </span><span class='hljl-n'>Y_new</span><span class='hljl-p'>))</span><span class='hljl-t'>
+
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>city_new</span><span class='hljl-p'>[</span><span class='hljl-n'>i</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>I</span><span class='hljl-p'>],</span><span class='hljl-t'> </span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-n'>i</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-p'>])</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-n'>solid_waste_production</span><span class='hljl-p'>[</span><span class='hljl-n'>i</span><span class='hljl-p'>])</span><span class='hljl-t'>
+</span><span class='hljl-cs'>#WTE</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>WTE</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>R_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>&lt;=</span><span class='hljl-t'> </span><span class='hljl-n'>capacities</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>])</span><span class='hljl-t'>
+</span><span class='hljl-cs'>#MRF</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>MRF</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'>  </span><span class='hljl-oB'>&lt;=</span><span class='hljl-t'> </span><span class='hljl-n'>capacities</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>])</span><span class='hljl-t'>
+</span><span class='hljl-cs'>#LF</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>LF</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>R_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>R_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>&lt;=</span><span class='hljl-t'> </span><span class='hljl-n'>capacities</span><span class='hljl-p'>[</span><span class='hljl-ni'>3</span><span class='hljl-p'>])</span><span class='hljl-t'>
+
+</span><span class='hljl-cs'># residuals</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>residual_1</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>R_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-n'>fraction_ash_dir</span><span class='hljl-t'> </span><span class='hljl-oB'>.*</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>R_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]))</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>residual_2</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>R_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>R_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>1</span><span class='hljl-oB'>-</span><span class='hljl-n'>fraction_rec</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>.*</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]))</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>residual_3</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>R_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>3</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-p'>])</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>noresidual_diag</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-nf'>sum</span><span class='hljl-p'>(</span><span class='hljl-n'>R_new</span><span class='hljl-p'>[</span><span class='hljl-n'>i</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>i</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-k'>for</span><span class='hljl-t'> </span><span class='hljl-n'>i</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>I</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>noresidual</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>R_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+
+</span><span class='hljl-cs'># commitments </span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>commit_1</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>R_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-oB'>-</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>10000</span><span class='hljl-oB'>*</span><span class='hljl-n'>Y_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>])</span><span class='hljl-t'> </span><span class='hljl-oB'>&lt;=</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>commit_2</span><span class='hljl-p'>,</span><span class='hljl-t'>  </span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>W_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>,</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>10000</span><span class='hljl-oB'>*</span><span class='hljl-n'>Y_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>])</span><span class='hljl-t'> </span><span class='hljl-oB'>&lt;=</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nd'>@constraint</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>commit_3</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>Y_new</span><span class='hljl-p'>[</span><span class='hljl-ni'>3</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>==</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-p'>)</span><span class='hljl-t'>
+
+</span><span class='hljl-nf'>optimize!</span><span class='hljl-p'>(</span><span class='hljl-n'>waste_new</span><span class='hljl-p'>)</span>
+</pre>
+
+
+Running HiGHS 1.3.0 [date: 1970-01-01, git hash: e5004072b-dirty]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Presolving model
+8 rows, 11 cols, 28 nonzeros
+7 rows, 10 cols, 26 nonzeros
+
+Solving MIP model with:
+   7 rows
+   10 cols (2 binary, 0 integer, 0 implied int., 8 continuous)
+   26 nonzeros
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+     Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   2000            inf                  inf        0      0      0         0     0.0s
+ T       0       0         0   0.00%   2000            46200             95.67%        0      0      0         3     0.0s
+
+Solving report
+  Status            Optimal
+  Primal bound      46200
+  Dual bound        46200
+  Gap               0% (tolerance: 0.01%)
+  Solution status   feasible
+                    46200 (objective)
+                    0 (bound viol.)
+                    0 (int. viol.)
+                    0 (row viol.)
+  Timing            0.00 (total)
+                    0.00 (presolve)
+                    0.00 (postsolve)
+  Nodes             1
+  LP iterations     3 (total)
+                    0 (strong br.)
+                    0 (separation)
+                    0 (heuristics)
+
+
+<h2>Problem 2.3</h2>
+<h3>Find optimal solution and report optimal objective values</h3>
+<h3>Provide diagram showing new waste flows</h3>
+
+
+<pre class='hljl'>
+<span class='hljl-n'>cost_min</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>objective_value</span><span class='hljl-p'>(</span><span class='hljl-n'>waste</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-n'>commitments</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>value</span><span class='hljl-oB'>.</span><span class='hljl-p'>(</span><span class='hljl-n'>Y</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-n'>waste_values</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>value</span><span class='hljl-oB'>.</span><span class='hljl-p'>(</span><span class='hljl-n'>W</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-n'>residual_values</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>value</span><span class='hljl-oB'>.</span><span class='hljl-p'>(</span><span class='hljl-n'>R</span><span class='hljl-p'>)</span><span class='hljl-t'>
+
+</span><span class='hljl-nf'>println</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;Objective Value &quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>objective_value</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-nf'>println</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;Facility Not Used is the MRF&quot;</span><span class='hljl-p'>)</span>
+</pre>
+
+
+Objective Value objective_value
+Facility Not Used is the MRF
+
+
+<p><img src="waste_diagram_2.png" alt="Waste Diagram 2" /></p>
+<h1>References</h1>
+<p>https://jump.dev/ https://jump.dev/JuMP.jl/stable/manual/constraints/ assitance from Akanksha Srivastava</p>
+
+
+    <hr class="title">
+      </div>
+    </div>
+  </div>
+</BODY>
+
+</HTML>
