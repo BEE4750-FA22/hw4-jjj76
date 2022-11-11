@@ -155,7 +155,7 @@ println("Objective Value ", objective_value)
 println("Facility Not Used is the MRF")
 
 ```
-![Waste Diagram](waste_diagram.png)
+![Waste Diagram](/Users/jaden/github-classroom/BEE4750-FA22/hw4-jjj76/figures/Waste Diagram.png)
 
 # Problem 2
 ### Carbon Tax 
@@ -229,7 +229,7 @@ println("Objective Value ", objective_value)
 println("Facility Not Used is the MRF")
 
 ```
-![Waste Diagram 2](waste_diagram_2.png)
+![Waste Diagram New](/Users/jaden/github-classroom/BEE4750-FA22/hw4-jjj76/figures/Waste Diagram New.png)
 
 
 # References
